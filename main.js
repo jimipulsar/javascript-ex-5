@@ -27,14 +27,16 @@ var studente2 = {
   età : 30
 };
 
+
 var studenti = [studente, studente1, studente2];
 
+
+
 for (var i = 0; i < studenti.length; i++) {
-  document.writeln("<br>");
-  for(var key in studenti[i]) {
-    document.writeln(key + ": " + studenti[i][key] + "<br>");
+  var studente_modificato = studenti[i];
+    document.writeln("<br>" + "nome : " + studente_modificato['nome'] );
+    document.writeln("<br>" + "cognome : " + studente_modificato['cognome'] + "<br>");
   }
-}
 
 // ESERCIZIO 3
 document.writeln("<br><h3>- Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.<br></h3>");
